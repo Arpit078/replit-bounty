@@ -1,3 +1,5 @@
+//the code is funtional now
+
 const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config()
 const token = process.env.TELEGRAM_TOKEN;
@@ -60,7 +62,7 @@ cron.schedule('0 * * * *',()=>{
 const link_to_site = `https://replit-bounty.onrender.com`
 
 
-cron.schedule('0 */15 * * * *', () => {
+cron.schedule('0 */14 * * * *', () => {
 
 axios.get(link_to_site, { 
     headers: { "Accept-Encoding": "gzip,deflate,compress" } 
